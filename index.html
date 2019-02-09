@@ -10,18 +10,29 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.text-decoration-none {text-decoration: none;}
+.bgimg-me {
+    background-image: url("DSC_8678.jpg");
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (max-width: 485px) {
+    .w3-jumbo {
+        font-size: 46px !important;
+    }
+}
 </style>
 <body>
 
 <!-- Navbar -->
-<div class="w3-top" style="z-index:3;">
+<!-- <div class="w3-top" style="z-index:3;">
     <div class="w3-bar w3-card w3-left-align w3-large w3-blue-grey">
         <a id="navButton" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);"title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-light-blue">Hjem</a> -->
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-light-blue">Hjem</a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
     </div>
 
-    <!-- Navbar on small screens -->
+    Navbar on small screens
     <div id="dropdown" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
         <a href="#" class="w3-bar-item w3-button w3-padding-large">Hjem</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">Hjem</a>
@@ -30,10 +41,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 </div>
 
-<div class="w3-overlay" id="overlay"></div>
+<div class="w3-overlay" id="overlay"></div> -->
 
 <!-- Header -->
-<header class="w3-container w3-center" style="padding:128px 16px">
+<header class="w3-container w3-center bgimg-me" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">Ask Berstad Kolltveit</h1>
     <p class="w3-xlarge">Utvikler og datateknologistudent ved NTNU.</p>
     <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
@@ -42,25 +53,94 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
-        <h1>Lorem Ipsum</h1>
-        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-        <p class="w3-text-grey">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <h1>Prosjekter</h1>
+        <h5 class="w3-padding-32">Her er noen av mine favorittprosjekter</h5>
+
+        <div class="w3-row">
+            <div class="w3-col m3">
+                <p>
+                    <a href="https://github.com/askbk/inmarket-backend" class="text-decoration-none">
+                        <strong>
+                            inmarket-backend
+                        </strong>
+                    </a>
+                </p>
+            </div>
+            <div class="w3-col m9">
+                <p class="w3-text-grey">
+                    Det nyeste prosjektet mitt. Her arbeider jeg med å lage ny backend som skal støtte InMarket sin kommende app. Skrevet med Node.js, Express, MariaDB, containerisert med Docker.
+                </p>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col m3">
+                <p>
+                    <a href="https://github.com/askbk/inmarket-app" class="text-decoration-none">
+                        <strong>
+                            inmarket-app
+                        </strong>
+                    </a>
+                </p>
+            </div>
+            <div class="w3-col m9">
+                <p class="w3-text-grey">
+                    Appen som vil ta Norge med storm. Vi lar arbeidsgivere og arbeidssøkere komme raskt i kontakt og utveksle erfaring. Hovedsakelig ECMAScript 2015 (ES6).
+                </p>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col m3">
+                <p>
+                    <a href="https://github.com/askbk/kattis" class="text-decoration-none">
+                        <strong>
+                            kattis
+                        </strong>
+                    </a>
+                </p>
+            </div>
+            <div class="w3-col m9">
+                <p class="w3-text-grey">
+                    Løsninger på en del oppgaver fra <a href="https://open.kattis.com/">Kattis</a>. Mitt første møte med algoritmisk tenkning i programmeringssammenheng. Bruker C++.
+                </p>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col m3">
+                <p>
+                    <a href="https://github.com/L4443/hikingapp" class="text-decoration-none">
+                        <strong>
+                            hikingapp
+                        </strong>
+                    </a>
+                </p>
+            </div>
+            <div class="w3-col m9">
+                <p class="w3-text-grey">
+                    Skoleoppgave fra faget Informasjonsteknologi 2 i tredjeklasse på videregående. Jeg er fortsatt ganske stolt over <a href="https://l4443.github.io/hikingapp/">resultatet</a>. Skrevet i JavaScript (ES5).
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 
 <!-- Second Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
-        <h1>Lorem Ipsum</h1>
-        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-        <p class="w3-text-grey">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <h1>Arbeid</h1>
+        <ul class="w3-ul">
+            <li>
+                <h5 class="w3-padding-32">InMarket Norge</h5>
+                <p class="w3-text-grey">
+                    Det er her jeg bruker mesteparten av tiden min.
+                </p>
+            </li>
+            <li>
+                <h5 class="w3-padding-32">Unge Kokker</h5>
+                <p class="w3-text-grey">
+                    Utviklet nettsiden ved hjelp av Wordpress.
+                </p>
+            </li>
+        </ul>
     </div>
 </div>
 
