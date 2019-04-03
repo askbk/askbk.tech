@@ -12,4 +12,5 @@ overlay.addEventListener("click", e => {
 
 function toggleMenu() {
     overlay.classList.toggle("w3-show");
+    dropdown.classList.toggle("w3-hide");
 }
