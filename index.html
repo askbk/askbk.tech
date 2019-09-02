@@ -40,47 +40,47 @@
 <div class="w3-overlay" id="overlay"></div>
 
 <!-- Header -->
-<header class="w3-container w3-center" style="padding:128px 16px">
+<header class="w3-container w3-center" style="padding: 128px 16px 0px 16px;">
     <h1 class="w3-margin w3-jumbo">Ask Berstad Kolltveit</h1>
-    <p class="w3-xlarge">Utvikler og datateknologistudent ved NTNU.</p>
-    <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
+    <p class="w3-xlarge">Utvikler. Datateknologistudent ved NTNU.</p>
+    <a href="#projects">
+        <i class="w3-margin-top fa fa-angle-double-down w3-text-dark-grey" style="font-size:110px;"></i>
+    </a>
 </header>
 
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
+<!-- Projects -->
+<div class="w3-row-padding w3-padding-64 w3-container" id="projects">
     <div class="w3-content">
         <h1>Prosjekter</h1>
-        <h5 class="w3-padding-32">Her er noen av mine favorittprosjekter</h5>
-
         <div class="w3-row">
             <div class="w3-col m3">
                 <p>
-                    <a href="https://github.com/askbk/inmarket-backend" class="text-decoration-none">
+                    <a href="https://github.com/inmarket-as/inmarket" class="text-decoration-none">
                         <strong>
-                            inmarket-backend
+                            InMarket
                         </strong>
                     </a>
                 </p>
             </div>
             <div class="w3-col m9">
                 <p class="w3-text-grey">
-                    Her arbeider jeg med å lage ny backend som skal støtte InMarket sin kommende plattform. Skrevet med Node.js, Express, containerisert med Docker.
+                    Plattformen som lar arbeidsgivere og arbeidssøkere komme raskt i kontakt og utveksle erfaring. Teknologistakk: MariaDB, Redis, Node.js, Express, React (Framework7). Kjører på Google Kubernetes Engine.
                 </p>
             </div>
         </div>
         <div class="w3-row">
             <div class="w3-col m3">
                 <p>
-                    <a href="https://github.com/askbk/inmarket-frontend" class="text-decoration-none">
+                    <a href="https://github.com/askbk/tdt4140" class="text-decoration-none">
                         <strong>
-                            inmarket-frontend
+                            Momentum (TDT4140 Programvareutvikling)
                         </strong>
                     </a>
                 </p>
             </div>
             <div class="w3-col m9">
                 <p class="w3-text-grey">
-                    Appen som lar arbeidsgivere og arbeidssøkere komme raskt i kontakt og utveksle erfaring. Hovedsakelig React.
+                    Prosjektet ble laget i forbindelse med NTNU-emnet TDT4140 Programvareutvikling. Prosjektet gikk ut på at vi skulle utvikle et produkt for en "kunde" (studentassistent) fra bedriften Momentum. Bruker Python, Django og MySQL.
                 </p>
             </div>
         </div>
@@ -119,13 +119,54 @@
     </div>
 </div>
 
-<!-- Second Grid -->
+<!-- What I know -->
+<div class="w3-dark-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Ting jeg kan</h1>
+        <div class="w3-row">
+            <div class="w3-col m4">
+                <h4>Språk</h4>
+                <ul>
+                    <li>JavaScript (ES6)</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Java</li>
+                    <li>Julia</li>
+                    <li>HTML, CSS</li>
+                </ul>
+            </div>
+            <div class="w3-col m4">
+                <h4>Teknologier</h4>
+                <ul>
+                    <li>MySQL/MariaDB</li>
+                    <li>Redis</li>
+                    <li>Node.js</li>
+                    <li>Docker, Kubernetes</li>
+                    <li>Google Kubernetes Engine</li>
+                    <li>Git</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            <div class="w3-col m4">
+                <h4>Rammeverk</h4>
+                <ul>
+                    <li>React</li>
+                    <li>Express</li>
+                    <li>Flask</li>
+                    <li>W3.CSS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Work -->
 <div class="w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
         <h1>Arbeid</h1>
 
         <h4 class="">InMarket Norge</h4>
-        <p><strong>Teknologidirektør</strong>, oktober 2017 - d.d.</p>
+        <p><strong>Teknologisk leder</strong>, oktober 2017 - d.d.</p>
         <p class="w3-text-grey">
             Ansvar for avgjørelser innen teknologi og utvikling av nye plattformer. Les mer om oss på <a href="https://inmarket.as">inmarket.as</a>.
         </p>
@@ -144,6 +185,7 @@
     </div>
 </div>
 
+<!-- Education -->
 <div class="w3-container w3-blue-grey w3-padding-64">
     <div class="w3-content">
         <h1>Utdanning</h1>
