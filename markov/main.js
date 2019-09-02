@@ -21,8 +21,7 @@ const text = document.getElementById("inputText"),
     output = document.getElementById("outputContainer");
 
 document.getElementById("generateButton").addEventListener("click", () => {
-    const mark = new TextGenerator(text.value, false);
-    mark.build(k.value);
+    const mark = new TextGenerator(text.value, false, k.value, M.value);
 
-    output.innerHTML = mark.generate(M.value);
+    output.innerHTML = mark.generate();
 });

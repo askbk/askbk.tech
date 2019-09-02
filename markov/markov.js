@@ -1,3 +1,4 @@
+// Class for building and randomly traversing a graph.
 export class MarkovChain {
     constructor(states = {}) {
         this.states = states;
@@ -23,28 +24,32 @@ export class MarkovChain {
     }
 }
 
+// Class for generating text based on Markov chains.
 export class TextGenerator {
-    constructor(inputText = "", wordMode = false) {
+    constructor(inputText = "", wordMode = false, k = 1, M = 30) {
         this.inputText = inputText;
+        this.inputWords = inputText.split(" ");
         this.markovChain = new MarkovChain();
         this.wordMode = wordMode;
+        this.k = k;
+        this.M = M;
+
+        this.build(k)
     }
 
-    build(k = 1) {
+    build(k) {
         let prevState = undefined, currState;
 
         if (this.wordMode) {
-            this.inputText = this.inputText.split(" ");
-
-            for (let i = 0; i < this.inputText.length; i++) {
-                currState = this.inputText[i];
+            for (let i = 0; i < this.inputWords.length; i++) {
+                currState = this.inputWords[i];
 
                 this.markovChain.addTransition(prevState, currState);
 
                 prevState = currState;
             }
 
-            this.markovChain.addTransition(currState, this.inputText[0]);
+            this.markovChain.addTransition(currState, this.inputWords[0]);
 
             return;
         }
@@ -56,14 +61,27 @@ export class TextGenerator {
 
             prevState = currState;
         }
+
+        this.markovChain.addTransition(currState, this.inputText.substring(0, k))
     }
 
-    generate(M = 30) {
-        const startN = Math.floor(Math.random() * Object.keys(this.markovChain.states).length);
-        let prevState = Object.keys(this.markovChain.states)[startN];
+    generate() {
         let outputText = "";
 
-        for (let i = 0; i < M; i++) {
+        while (outputText.length < this.k) {
+            const wordIndex = Math.floor(Math.random() * Object.keys(this.inputWords).length);
+            const word = this.inputWords[wordIndex];
+            if (outputText.length === 0) {
+                outputText = this.capitalizeWord(word)
+            } else {
+                outputText += " " + word;
+            }
+        }
+
+        let prevState = outputText.slice(-this.k);
+        console.log(outputText, prevState);
+
+        for (let i = 0; i < this.M; i++) {
             prevState = this.markovChain.next(prevState);
 
             if (this.wordMode) {
@@ -74,5 +92,9 @@ export class TextGenerator {
         }
 
         return outputText;
+    }
+
+    capitalizeWord(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
     }
 }
