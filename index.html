@@ -1,251 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Ask Berstad Kolltveit</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-        .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-        .text-decoration-none {text-decoration: none;}
-        @media only screen and (max-width: 485px) {
-            .w3-jumbo {
-                font-size: 46px !important;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top" style="z-index:3;">
-    <div class="w3-bar w3-card w3-left-align w3-large w3-blue-grey">
-        <a id="navButton" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);"title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-light-blue">Hjem</a>
-        <a href="markov.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Markov Chain text generator</a>
-        <a href="huffman.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Huffman coding tool</a>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div>
+      <a href="index.html">Hjem</a>
+      <a href="markov.html">Markov Chain text generator</a>
+      <a href="huffman.html">Huffman coding tool</a>
     </div>
 
-    <div id="dropdown" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Hjem</a>
-        <a href="markov.html" class="w3-bar-item w3-button w3-padding-large">Markov Chain text generator</a>
-        <a href="huffman.html" class="w3-bar-item w3-button w3-padding-large">Huffman coding tool</a>
-    </div>
-</div>
+    <!-- Header -->
+    <header>
+      <h1>Ask Berstad Kolltveit</h1>
+      <p>Utvikler. Datateknologistudent ved NTNU.</p>
+      <a href="#projects"> </a>
+    </header>
 
-<div class="w3-overlay" id="overlay"></div>
-
-<!-- Header -->
-<header class="w3-container w3-center" style="padding: 128px 16px 0px 16px;">
-    <h1 class="w3-margin w3-jumbo">Ask Berstad Kolltveit</h1>
-    <p class="w3-xlarge">Utvikler. Datateknologistudent ved NTNU.</p>
-    <a href="#projects">
-        <i class="w3-margin-top fa fa-angle-double-down w3-text-dark-grey" style="font-size:110px;"></i>
-    </a>
-</header>
-
-<!-- Projects -->
-<div class="w3-row-padding w3-padding-64 w3-container" id="projects">
-    <div class="w3-content">
+    <!-- Projects -->
+    <div id="projects">
+      <div class="w3-content">
         <h1>Prosjekter</h1>
         <div class="w3-row">
-            <div class="w3-col m3">
-                <p>
-                    <a href="https://github.com/Kobrestad/TronderEnergiLossForecast" class="text-decoration-none">
-                        <strong>
-                            Grid Loss Forecasting
-                        </strong>
-                    </a>
-                </p>
-            </div>
-            <div class="w3-col m9">
-                <p class="w3-text-grey">
-                    Prediksjon av tap i strømnettet ved hjelp av Holt-Winters, lineær regresjon og long short-term memory. Prosjekt i forbindelse med TDT4173 Maskinlæring. Scikit-Learn, Keras.
-                </p>
-            </div>
+          <div class="w3-col m3">
+            <p>
+              <a
+                href="https://github.com/Kobrestad/TronderEnergiLossForecast"
+                class="text-decoration-none"
+              >
+                <strong> Grid Loss Forecasting </strong>
+              </a>
+            </p>
+          </div>
+          <div class="w3-col m9">
+            <p class="w3-text-grey">
+              Prediksjon av tap i strømnettet ved hjelp av Holt-Winters, lineær
+              regresjon og long short-term memory. Prosjekt i forbindelse med
+              TDT4173 Maskinlæring. Scikit-Learn, Keras.
+            </p>
+          </div>
         </div>
         <div class="w3-row">
-            <div class="w3-col m3">
-                <p>
-                    <a href="https://github.com/askbk/ES6-pong" class="text-decoration-none">
-                        <strong>
-                            Pong med Q-learning
-                        </strong>
-                    </a>
-                </p>
-            </div>
-            <div class="w3-col m9">
-                <p class="w3-text-grey">
-                    Et forsøk på å implementere en Q-learning agent som spiller pong. JavaScript.
-                </p>
-            </div>
+          <div class="w3-col m3">
+            <p>
+              <a
+                href="https://github.com/askbk/ES6-pong"
+                class="text-decoration-none"
+              >
+                <strong> Pong med Q-learning </strong>
+              </a>
+            </p>
+          </div>
+          <div class="w3-col m9">
+            <p class="w3-text-grey">
+              Et forsøk på å implementere en Q-learning agent som spiller pong.
+              JavaScript.
+            </p>
+          </div>
         </div>
         <div class="w3-row">
-            <div class="w3-col m3">
-                <p>
-                    <a href="https://github.com/inmarket-as/inmarket" class="text-decoration-none">
-                        <strong>
-                            InMarket
-                        </strong>
-                    </a>
-                </p>
-            </div>
-            <div class="w3-col m9">
-                <p class="w3-text-grey">
-                    Plattformen som lar arbeidsgivere og arbeidssøkere komme raskt i kontakt og utveksle erfaring. Teknologistakk: MariaDB, Redis, Node.js, Express, React (Framework7). Kjører på Google Kubernetes Engine.
-                </p>
-            </div>
+          <div class="w3-col m3">
+            <p>
+              <a
+                href="https://github.com/inmarket-as/inmarket"
+                class="text-decoration-none"
+              >
+                <strong> InMarket </strong>
+              </a>
+            </p>
+          </div>
+          <div class="w3-col m9">
+            <p class="w3-text-grey">
+              Plattformen som lar arbeidsgivere og arbeidssøkere komme raskt i
+              kontakt og utveksle erfaring. Teknologistakk: MariaDB, Redis,
+              Node.js, Express, React (Framework7). Kjører på Google Kubernetes
+              Engine.
+            </p>
+          </div>
         </div>
         <div class="w3-row">
-            <div class="w3-col m3">
-                <p>
-                    <a href="https://github.com/askbk/tdt4140" class="text-decoration-none">
-                        <strong>
-                            Momentum (TDT4140 Programvareutvikling)
-                        </strong>
-                    </a>
-                </p>
-            </div>
-            <div class="w3-col m9">
-                <p class="w3-text-grey">
-                    Prosjektet ble laget i forbindelse med NTNU-emnet TDT4140 Programvareutvikling. Prosjektet gikk ut på at vi skulle utvikle et produkt for en "kunde" (studentassistent) fra bedriften Momentum. Bruker Python, Django og MySQL.
-                </p>
-            </div>
+          <div class="w3-col m3">
+            <p>
+              <a
+                href="https://github.com/askbk/tdt4140"
+                class="text-decoration-none"
+              >
+                <strong> Momentum (TDT4140 Programvareutvikling) </strong>
+              </a>
+            </p>
+          </div>
+          <div class="w3-col m9">
+            <p class="w3-text-grey">
+              Prosjektet ble laget i forbindelse med NTNU-emnet TDT4140
+              Programvareutvikling. Prosjektet gikk ut på at vi skulle utvikle
+              et produkt for en "kunde" (studentassistent) fra bedriften
+              Momentum. Bruker Python, Django og MySQL.
+            </p>
+          </div>
         </div>
         <div class="w3-row">
-            <div class="w3-col m3">
-                <p>
-                    <a href="https://github.com/askbk/kattis" class="text-decoration-none">
-                        <strong>
-                            kattis
-                        </strong>
-                    </a>
-                </p>
-            </div>
-            <div class="w3-col m9">
-                <p class="w3-text-grey">
-                    Løsninger på en del oppgaver fra <a href="https://open.kattis.com/">Kattis</a>. Mitt første møte med algoritmisk tenkning i programmeringssammenheng. Mest C++.
-                </p>
-            </div>
+          <div class="w3-col m3">
+            <p>
+              <a
+                href="https://github.com/askbk/kattis"
+                class="text-decoration-none"
+              >
+                <strong> kattis </strong>
+              </a>
+            </p>
+          </div>
+          <div class="w3-col m9">
+            <p class="w3-text-grey">
+              Løsninger på en del oppgaver fra
+              <a href="https://open.kattis.com/">Kattis</a>. Mitt første møte
+              med algoritmisk tenkning i programmeringssammenheng. Mest C++.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- What I know -->
-<div class="w3-dark-grey w3-padding-64 w3-container">
-    <div class="w3-content">
+    <!-- What I know -->
+    <div>
+      <div>
         <h1>Ting jeg har erfaring med</h1>
-        <div class="w3-row">
-            <div class="w3-col m4">
-                <h4>Språk</h4>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>C#</li>
-                    <li>SQL</li>
-                    <li>Java</li>
-                    <li>Elixir</li>
-                    <li>HTML, CSS</li>
-                </ul>
-            </div>
-            <div class="w3-col m4">
-                <h4>Teknologier</h4>
-                <ul>
-                    <li>MySQL/MariaDB</li>
-                    <li>Redis</li>
-                    <li>Node.js</li>
-                    <li>Docker, Kubernetes</li>
-                    <li>Google Kubernetes Engine</li>
-                    <li>Git</li>
-                    <li>Linux</li>
-                </ul>
-            </div>
-            <div class="w3-col m4">
-                <h4>Rammeverk</h4>
-                <ul>
-                    <li>React</li>
-                    <li>Express</li>
-                    <li>Flask</li>
-                    <li>ASP.NET</li>
-                </ul>
-            </div>
+        <div>
+          <div>
+            <h4>Språk</h4>
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>C#</li>
+              <li>SQL</li>
+              <li>Java</li>
+              <li>Elixir</li>
+              <li>HTML, CSS</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Teknologier</h4>
+            <ul>
+              <li>MySQL/MariaDB</li>
+              <li>Redis</li>
+              <li>Node.js</li>
+              <li>Docker, Kubernetes</li>
+              <li>Google Kubernetes Engine</li>
+              <li>Git</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Rammeverk</h4>
+            <ul>
+              <li>React</li>
+              <li>Express</li>
+              <li>Flask</li>
+              <li>ASP.NET</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Work -->
-<div class="w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
+    <!-- Work -->
+    <div>
+      <div>
         <h1>Arbeid</h1>
 
-        <h4 class="margin-bottom-0">NorApps</h4>
-        <p class="margin-0"><strong>Utvikler</strong>, oktober 2020 - d.d.</p>
-        <p class="w3-text-grey margin-0">
-            Utvikling av nettside for livescore til fotball. React, Express.
+        <h4>NorApps</h4>
+        <p><strong>Utvikler</strong>, oktober 2020 - d.d.</p>
+        <p>Utvikling av nettside for livescore til fotball. React, Express.</p>
+
+        <h4>Realfagshjelpen</h4>
+        <p><strong>Utvikler</strong>, oktober 2020 - d.d.</p>
+        <p>
+          Utvikler ny læringsplattform som skal automatisere en-til-en
+          privatundervisning med kunstig intelligens. Python, Flask, React.
         </p>
 
-        <h4 class="margin-bottom-0">Realfagshjelpen</h4>
-        <p class="margin-0"><strong>Utvikler</strong>, oktober 2020 - d.d.</p>
-        <p class="w3-text-grey margin-0">
-            Utvikler ny læringsplattform som skal automatisere en-til-en privatundervisning med kunstig intelligens. Python, Flask, React.
+        <h4>Knowit Experience</h4>
+        <p><strong>Sommerutvikler</strong>, juni 2020 - august 2020</p>
+        <p>
+          Utviklet mikrotjeneste for håndtering av geografiske Points of
+          Interest for FjordTours. C#, ASP.NET, React Native, TypeScript.
         </p>
 
-        <h4 class="margin-bottom-0">Knowit Experience</h4>
-        <p class="margin-0"><strong>Sommerutvikler</strong>, juni 2020 - august 2020</p>
-        <p class="w3-text-grey margin-0">
-            Utviklet mikrotjeneste for håndtering av geografiske Points of Interest for FjordTours. C#, ASP.NET, React Native, TypeScript.
+        <h4>InMarket Norge</h4>
+        <p><strong>Teknologisk leder</strong>, oktober 2017 - d.d.</p>
+        <p>
+          Ansvar for avgjørelser innen teknologi og å lede utviklingen av nye
+          plattformer. Les mer om oss på
+          <a href="https://inmarket.as">inmarket.as</a>.
         </p>
 
-        <h4 class="margin-bottom-0">InMarket Norge</h4>
-        <p class="margin-0"><strong>Teknologisk leder</strong>, oktober 2017 - d.d.</p>
-        <p class="w3-text-grey margin-0">
-            Ansvar for avgjørelser innen teknologi og å lede utviklingen av nye plattformer. Les mer om oss på <a href="https://inmarket.as">inmarket.as</a>.
+        <h4>BKK Nett</h4>
+        <p><strong>Sommerutvikler</strong>, juni 2019 - august 2019</p>
+        <p>
+          Utviklet et system sammen med to andre utviklere for innsamling og
+          automatisk tagging av dronebilder av nettkomponenter. Python, Flask,
+          React.
         </p>
 
-        <h4 class="margin-bottom-0">BKK Nett</h4>
-        <p class="margin-0"><strong>Sommerutvikler</strong>, juni 2019 - august 2019</p>
-        <p class="w3-text-grey margin-0">
-            Utviklet et system sammen med to andre utviklere for innsamling og automatisk tagging av dronebilder av nettkomponenter. Python, Flask, React.
+        <h4>Unge Kokker</h4>
+        <p><strong>Utvikler</strong>, november 2018 - mars 2019</p>
+        <p>
+          Ansvar for utvikling og vedlikehold av nettstedet deres,
+          <a href="http://ungekokker.no">ungekokker.no</a>.
         </p>
 
-        <h4 class="margin-bottom-0">Unge Kokker</h4>
-        <p class="margin-0"><strong>Utvikler</strong>, november 2018 - mars 2019</p>
-        <p class="w3-text-grey margin-0">
-            Ansvar for utvikling og vedlikehold av nettstedet deres, <a href="http://ungekokker.no">ungekokker.no</a>.
+        <h4>Annet jeg har utviklet</h4>
+        <p><strong>Oslo hiking</strong>, mars 2019 - mai 2019</p>
+        <p>
+          Turer i naturskjønne omgivelser i Oslo-området:
+          <a href="http://www.oslohiking.no">oslohiking.no</a>.
         </p>
-
-        <h4 class="margin-bottom-0">Annet jeg har utviklet</h4>
-        <p class="margin-0"><strong>Oslo hiking</strong>, mars 2019 - mai 2019</p>
-        <p class="w3-text-grey margin-0">
-            Turer i naturskjønne omgivelser i Oslo-området: <a href="http://www.oslohiking.no">oslohiking.no</a>.
-        </p>
+      </div>
     </div>
-</div>
 
-<!-- Education -->
-<div class="w3-container w3-blue-grey w3-padding-64">
-    <div class="w3-content">
-        <h1>Utdanning</h1>
-        <h4 class="margin-bottom-0">NTNU Trondheim</h4>
-        <p class="margin-0"><strong>Datateknologi, spesialisering i kunstig intelligens</strong>, august 2017 - 2022 (planlagt)</p>
-        <h4 class="margin-bottom-0">Sandsli videregående skole</h4>
-        <p class="margin-0"><strong>Realfag</strong>, august 2014 - juni 2017</p>
+    <!-- Education -->
+    <div>
+      <h1>Utdanning</h1>
+      <h4>NTNU Trondheim</h4>
+      <p>
+        <strong>Datateknologi, spesialisering i kunstig intelligens</strong>,
+        august 2017 - 2022 (planlagt)
+      </p>
+      <h4>Sandsli videregående skole</h4>
+      <p><strong>Realfag</strong>, august 2014 - juni 2017</p>
     </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">
-    <div class="w3-xlarge w3-padding-32">
-        <a href="https://www.github.com/askbk"> <i class="fa fa-github w3-hover-opacity w3-jumbo"></i> </a>
-    </div>
-</footer>
-
-<script src="js/navigation.js" charset="utf-8"></script>
-
-</body>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+      <a href="https://www.github.com/askbk"> Github </a>
+    </footer>
+  </body>
 </html>
