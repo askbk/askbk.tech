@@ -1,93 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Markov Chain text generator</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-        .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-        .text-decoration-none {text-decoration: none;}
-        @media only screen and (max-width: 485px) {
-            .w3-jumbo {
-                font-size: 46px !important;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Navbar -->
-    <div class="w3-top" style="z-index:3;">
-        <div class="w3-bar w3-card w3-left-align w3-large w3-blue-grey">
-            <a id="navButton" class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey" href="javascript:void(0);"title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Hjem</a>
-            <a href="markov.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-light-blue">Markov Chain text generator</a>
-            <a href="huffman.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Huffman coding tool</a>
-        </div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Hjem</a>
+      <a href="markov.html">Markov Chain text generator</a>
+      <a href="huffman.html">Huffman coding tool</a>
+    </nav>
+    <h1>Markov Chain text generator</h1>
+    <form>
+      <textarea
+        name="inputText"
+        rows="8"
+        id="inputText"
+        style="width: 600px"
+      ></textarea>
+      <br />
+      <label>
+        Number of previous characters to consider (<em>k=1</em> &#8594; only
+        previous character):<br />
+        <input type="number" name="" value="3" id="k" />
+      </label>
+      <br />
+      <label>
+        Number of characters to generate (<em>M</em>):<br />
+        <input type="number" name="" value="300" id="M" />
+      </label>
+      <br />
+      <button type="button" name="generateButton" id="generateButton">
+        Generate
+      </button>
+      <br />
+    </form>
 
-        <div id="dropdown" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-            <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Hjem</a>
-            <a href="markov.html" class="w3-bar-item w3-button w3-padding-large">Markov Chain text generator</a>
-            <a href="huffman.html" class="w3-bar-item w3-button w3-padding-large">Huffman coding tool</a>
-        </div>
-    </div>
-
-    <div class="w3-overlay" id="overlay"></div>
-
-    <!-- Header -->
-    <!-- <header class="w3-container w3-center" style="padding:128px 16px">
-        <h1 class="w3-margin w3-jumbo">Heyoh</h1>
-        <p class="w3-xlarge">Subtitle</p>
-    </header> -->
-
-    <!-- First Grid -->
-    <div class="w3-row-padding w3-padding-32 w3-container" style="margin-top:32px;">
-        <div class="w3-content">
-            <h1>Markov Chain text generator</h1>
-        </div>
-    </div>
-
-    <!-- Second Grid -->
-    <div class="w3-light-grey w3-padding-32 w3-container">
-        <div class="w3-content">
-            <form>
-                <textarea name="inputText" rows="8" id="inputText" style="width:100%"></textarea>
-                <label>
-                    Number of previous characters to consider (<em>k=1</em> &#8594; only previous character):<br>
-                    <input type="number" name="" value="3" id="k">
-                </label>
-                <br>
-                <label>
-                    Number of characters to generate (<em>M</em>):<br>
-                    <input type="number" name="" value="300" id="M">
-                </label>
-                <br>
-                <button type="button" name="generateButton" id="generateButton" class="w3-button w3-card w3-margin-top">Generate</button>
-                <br>
-                <p>A higher value for <em>k</em> relative to <em>M</em> will increase the likelihood of failure.</p>
-            </form>
-        </div>
-    </div>
-
-    <div class="w3-container w3-blue-grey w3-padding-32">
-        <div class="w3-content">
-            <h2>Generated text:</h2>
-            <p id="outputContainer"></p>
-        </div>
+    <div>
+      <h2>Generated text:</h2>
+      <p id="outputContainer"></p>
     </div>
 
     <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
-        <div class="w3-xlarge w3-padding-32">
-            <a href="https://www.github.com/askbk"> <i class="fa fa-github w3-hover-opacity w3-jumbo"></i> </a>
-        </div>
+    <footer>
+      <a href="https://www.github.com/askbk"> Github </a>
     </footer>
 
-    <script src="js/navigation.js" charset="utf-8"></script>
     <script src="markov/main.js" type="module" charset="utf-8" defer></script>
-</body>
+  </body>
 </html>
